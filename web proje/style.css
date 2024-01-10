@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* genel sayfa stil ayarları */
+body {
+  line-height: 1.6; /* satır yüksekliği */
+  color: #333; /* metin rengi */
+  font-size: 18px; /* temel font büyüklüğü */
+  background-color: #fff; /* sayfa arka plan rengi */
+}
+
+/* header stil ayarları */
+header {
+  background: #333; /* arka plan rengi */
+  color: #fff; /* metin rengi */
+  padding: 1rem 0; /* iç boşluğu */
+  text-align: center; /* metin hizalaması */
+}
+
+/* navbar stil ayarları */
+.navbar h2 {
+  margin: 0;
+  color: #ddd; /* navbar rengi */
+  padding: 8px;
+}
+
+/* navbar listesi stil ayarları */
+.navbar-list {
+  list-style: none; /* liste işaretlerini kaldırma */
+  display: flex; /* flexbox kullanarak yatay düzen */
+  justify-content: center; /* içeriği merkezi hizalama */
+  padding: 1rem; /* liste iç boşluğu */
+}
+
+/* navbar listesi öğe stil ayarları */
+.navbar-list-item {
+  padding: 0 1rem; /* liste öğeleri arasındaki boşluk */
+  transition: 0.3s;
+}
+
+.navbar-list-item:hover {
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+
+/* navbar link stil ayarları */
+.navbar-list-item a {
+  color: #ddd; /* navbar link rengi */
+  text-decoration: none; /* altçizgi kaldırma */
+  font-weight: bold;
+  padding: 16px 24px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.navbar-list-item a:hover {
+  color: #002d80;
+  background-color: #eee;
+  transition: 0.3s;
+}
+
+/* fotoğraf container stil ayarları */
+.photo-container {
+  display: flex; /* flexbox kullanarak içeriği yatay düzende hizalama */
+  justify-content: space-around; /* içeriği eşit aralıklarla dağıtma */
+  padding: 2rem; /* container iç boşluğu */
+  background: #eee; /* container arka plan rengi */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; /* ekran yüksekliği kadar container yüksekliği */
+}
+
+/* fotoğraf stil ayarları */
+.photo-holder {
+  flex: 1; /* her fotoğraf bölümü eşit yer kaplayacak */
+  margin: 30px; /* fotoğraf bölümleri arasındaki boşluk */
+  background: #e2e2e2; /* fotoğraf bölümü arka plan rengi */
+  padding: 20px; /* fotoğraf bölümü iç boşluğu */
+  display: flex; /* görüntüyü ortalamak için esnek görüntü */
+  justify-content: center; /* görüntüyü yatay olarak hizalama */
+  align-items: center; /* resmi dikey olarak ortala */
+  flex-direction: column; /* içeriği sütun halinde düzenleme */
+  box-shadow: 0px 0px 5px 4px #c4c4c4; /* gölgelendirme */
+  border-radius: 20px; /* kenar yumuşatma */
+}
+
+/* fotoğraf stil ayarları */
+.photo-holder h2 {
+  padding-bottom: 40px; /* alt boşluğu */
+  font-size: 36px; /* font büyüklüğü */
+}
+
+/* resim stil ayarları */
+img {
+  width: 600px; /* resimler için sabit bir genişlik ayarlama */
+  max-width: 100%; /* duyarlı resim */
+  height: auto; /* en boy oranını koru */
+  border-radius: 24px; /* resim kenar yuvarlatma */
+  transition: 0.3s;
+  box-shadow: 0px 0px 4px 3px #c4c4c4;
+  justify-content: center;
+}
+
+img:hover {
+  transition: 0.3s;
+  transform: translateY(-10px);
+  box-shadow: -2px -2px 2px #ace1ff;
+}
+
+/* stil ayarları */
+.kargo-div {
+  padding: 20px; /* iç boşluğu */
+  margin: 30px; /* dış boşluğu */
+}
+
+/* stil ayarları */
+.yolcu-div {
+  padding: 20px; /* iç boşluğu */
+  margin: 30px; /* dış boşluğu */
+}
+
+.footer {
+  background-color: #333;
+  color: #ccc;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.social li {
+  list-style-type: none;
+}
+
+.social-item i {
+  font-size: 30px;
+  color: #eee;
+  transition: 0.2s;
+}
+
+.social-item i:hover {
+  transition: 0.2s;
+  color: #1e8fff;
+  cursor: pointer;
+  scale: 1.1;
+}
